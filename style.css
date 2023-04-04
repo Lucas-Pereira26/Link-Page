@@ -1,0 +1,127 @@
+:root{
+    --cor-de-fundo:#222222;
+    --cor-de-fundo-link:#181818;
+    --cor-de-texto-link:#ffffff;
+    --filtro-modo-tema:grayscale(1) opacity(0.25);
+}
+.tema-ofcourse{
+    --cor-de-fundo:#5b49e8;
+    --cor-de-fundo-link:#fff;
+    --cor-de-texto-link:#5b49e8;
+    --filtro-modo-tema:grayscale(1) opacity(01);
+}
+*{
+    margin:0;
+    padding:0;
+    touch-action: manipulation;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background: var(--cor-de-fundo);
+    -webkit-font-smoothing: antialiased;
+    transition: 0,8s;
+}
+.primary{
+    max-width: 400px;
+    margin: 0 auto;
+}
+/*topo*/
+.topo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.modo-tema{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    border-radius: 100%;
+    border: none;
+    background: #fff;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    filter: var(--filtro-modo-tema);
+}
+.t-foto-perfil{
+    width: 100px;
+    border: 5px solid #fff;
+    border-radius: 100%;
+    margin-top: 60px;
+    box-shadow: 0,2 px 10px #000000;
+}
+.t-nome{
+    margin-top: 20px;
+    font-size: 22px;
+    color: #fff;
+
+}
+.t-profissao{
+    font-size: 15px;
+    color: #fff;
+
+}
+/*links*/
+.links{
+   margin: 30px 30px 0 30px; 
+}
+.links_log{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    height: 52px;
+    text-decoration: none;
+    background: var(--cor-de-fundo-link);
+   color: var(--cor-de-texto-link);
+   font-weight: 700;
+   border-radius: 18px;
+   box-shadow: 0 5px 10px #000;
+   transition: 0.5s;
+   
+}
+.links_log:hover{
+    filter:brightness(0.75);
+}
+.links-icon{
+    position: absolute;
+    left:20px;
+    font-size:30px;
+}
+/*Rodape*/
+
+.rodape{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+}
+.rodape-descrition{
+    font-weight: 700;
+    margin-top: 4px;
+}
+.model-icon{
+    margin:20px;
+}
+.links-icon-rodape-tele{
+    margin:0 50px;
+    font-size:30px;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links-icon-rodape-what{
+    margin:0 50px;
+    font-size:35px;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
